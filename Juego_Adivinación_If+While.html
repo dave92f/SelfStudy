@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<h1> Adivina el número que estoy pensando </h1>
+
+<script>
+    
+
+function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    
+}
+function print(sentence) {
+    document.write(sentence);
+    saltarLinea();
+}
+
+
+//var numeroPensado = 5 
+var numeroPensado = Math.round(Math.random()*10);
+var chances = 3;
+var count =1;
+
+
+while(count <= chances){
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"));
+
+if (numeroPensado == numeroLanzado){
+    alert("Felicitaciones, usted acertó en el intento número " + count + " el número pensado era " + numeroPensado);
+    break;
+}
+
+else{
+    if (numeroPensado > numeroLanzado){
+    alert("Usted erró, el número correcto es mayor que tu número");
+
+    }
+        else{
+            alert("Usted erró, el número correcto es menor que tu número.");
+           }
+    //alert("Usted erró");
+    count++;     
+}
+}
+
+if (numeroPensado == numeroLanzado){
+    print("Felicitaciones, usted acertó, el número pensado era " + numeroPensado);
+}
+
+else{
+    
+    print("Usted erró, el número correcto era " + numeroPensado);
+ 
+   }
+    
+</script>
