@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<h1> Tabla de multiplicar </h1>
+<br>
+
+
+Este programa muestra tablas de multiplicar con la función "while":
+
+<br>
+<br>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function print(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var multiplier = 1
+    var number = parseInt(prompt("Ingrese el número que desea multiplicar"))
+    while(multiplier <= 10){
+        print(number + " * " + multiplier + " = " + number * multiplier);
+        multiplier = multiplier + 1;
+    }
+
+
+</script>
