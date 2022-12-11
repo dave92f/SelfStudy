@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<h1> Tabla de multiplicar </h1>
+<br>
+
+
+Este programa muestra tablas de multiplicar con la función "for":
+
+<br>
+<br>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function print(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var number = parseInt(prompt("Ingrese el número que desea multiplicar"));
+
+    for(var multiplier = 1;multiplier <= 10;multiplier++){
+        print(number + " * " + multiplier + " = " + number * multiplier);
+    }
+</script>
